@@ -6,6 +6,13 @@ import { useState } from 'react';
 
 export default function App() {
 
+  const request = async() => {
+
+    var respuesta = await fetch("http://127.0.0.1:5000/");
+    var text = await respuesta.text();
+    
+    console.log(text);
+  }
   const [displayChildren, setDisplayChildren] = useState(true);
   const [cuentita, setCuentita] = useState(0);
 
@@ -28,6 +35,13 @@ export default function App() {
           title="ACTUALIZAR CUENTA"
           onPress={() => {
             setCuentita(cuentita + 1);
+          }}
+      />
+
+      <Button 
+          title="HACER REQUEST PARA PROBAR CORS"
+          onPress={() => {
+            request();
           }}
       />
       <StatusBar style="auto" />
