@@ -8,7 +8,7 @@ export default function App() {
 
   const request = async() => {
 
-    var respuesta = await fetch("http://127.0.0.1:5000/");
+    var respuesta = await fetch("https://tc3005b-backend.herokuapp.com/");
     var text = await respuesta.text();
     
     console.log(text);
