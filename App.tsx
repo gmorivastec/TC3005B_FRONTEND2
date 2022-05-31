@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>VAMOS A PROBAR SI SCRIPT FUNCIONA</Text>
       <Dino></Dino>
       <ComponenteFuncional></ComponenteFuncional>
       {
